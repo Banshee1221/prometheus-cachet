@@ -24,6 +24,9 @@ jobs:
     
     - name: Make GOBIN
       run: mkdir -p /home/runner/go/bin
+    
+    - name: Add GOPATH to PATH
+      run: PATH=$PATH:$GOPATH
 
     - name: Get dependencies
       run: |
